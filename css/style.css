@@ -1,5 +1,5 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&display=swap');
-
+@import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
 :root {
     --color-white: #ffffff;
     --color-dark: #111111;
@@ -85,25 +85,33 @@ h5 {
 .body__header {
     width: 100%;
     position: absolute;
-    top: 15px;
+    top: 25px;
+    z-index: 9;
+}
+
+.header-fixed {
+    width: 100%;
+    position: fixed;
+    top: 0px;
+    background-color: rgba(255, 255, 255, 0.678);
+    z-index: 99;
 }
 
 .body__header header {
     padding: 15px 25px;
-    background-color: rgba(255, 255, 255, 0.822);
+    background-color: rgba(255, 255, 255, 0.65);
     box-shadow: 0 2px 6px rgba(0,0,0,0.5) ;
 }
 
-.nav__link {
+.header__nav .nav__link {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
-    color: var(--btn-primary);
+    color: rgb(0, 31, 51);
     transition: 300ms;
 }
 
-
-.nav__link:hover {
+.header__nav .nav__link:hover {
     color: var(--btn-primary-hover)
 }
 
@@ -155,8 +163,59 @@ h5 {
     margin: 50px 0;
 }
 
+/* section facility
+============================ */
+.offer__block{
+    margin-bottom: 40px;
+}
+
+.offer__icon {
+    padding-bottom: 20px;
+}
+
+.offer__block h2 {
+    padding-bottom: 10px;
+}
+
+.offer__icon svg{
+    fill: var(--btn-primary);
+}
+
+/* section testimonial
+=========================== */
+.section__testimonial {
+    padding: 80px 0;
+    margin: 50px 0;
+}
+
+.section__testimonial .section__body {
+    width: 80%;
+    margin: 0 auto;
+}
+
+
+.section__testimonial .section__body iframe{
+    width: 100%;
+    height: 400px;
+}
+
+/*  section contact
+============================ */
+.section__form {
+
+}
+
+.map {
+    width: 100%;
+    min-height: 500px;
+}
+
 /* =======================
     
     #body footer
     
 ===========================*/
+
+.body__footer {
+    background-color: var(--btn-primary-hover);
+}
