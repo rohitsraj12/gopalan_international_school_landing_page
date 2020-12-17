@@ -29,6 +29,10 @@
     .body__banner {
         position: relative;
     }
+    
+    .mobile__banner {
+        display: none;
+    }
 
     .banner__content{
         padding: 45px 0;
@@ -173,7 +177,14 @@
         padding-left: 5px;
         padding-bottom: 4px;
     }
+
+    .desktop__banner {
+        display: none;
+    }
     
+    .banner__content {
+        display: none;
+    }
 
     .about__video iframe{
         height: 350px;
