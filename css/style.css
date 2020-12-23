@@ -1,5 +1,6 @@
 @import url('https://fonts.googleapis.com/css2?family=Barlow+Semi+Condensed:wght@100;200;300;400;500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Merienda:wght@400;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Berkshire+Swash&display=swap');
 :root {
     --color-white: #ffffff;
     --color-dark: #111111;
@@ -85,7 +86,7 @@ h5 {
 .body__header {
     width: 100%;
     position: absolute;
-    top: 25px;
+    top: 10px;
     z-index: 9;
 }
 
@@ -93,26 +94,27 @@ h5 {
     width: 100%;
     position: fixed;
     top: 0px;
-    background-color: rgba(255, 255, 255, 0.678);
+    /* background-color: rgba(0, 0, 0, 0.685); */
+    background-color: #025573f6;
     z-index: 99;
 }
 
 .body__header header {
     padding: 15px 25px;
-    background-color: rgba(255, 255, 255, 0.65);
-    box-shadow: 0 2px 6px rgba(0,0,0,0.5) ;
+    /* background-color: rgb(3, 0, 0);
+    box-shadow: 0 2px 6px rgba(0,0,0,0.5) ; */
 }
 
 .header__nav .nav__link {
     font-family: 'Barlow Semi Condensed', sans-serif;
     font-size: 1.2rem;
     font-weight: 500;
-    color: rgb(0, 31, 51);
+    color: rgb(255, 255, 255);
     transition: 300ms;
 }
 
 .header__nav .nav__link:hover {
-    color: var(--btn-primary-hover)
+    color: #fff;
 }
 
 /* =======================
@@ -134,8 +136,8 @@ h5 {
 .syllabus__form{
     padding: 20px 20px;
     width: 100%;
-    border: 1px solid #e8e8e8;
-    background-color: rgba(255, 255, 255, 0.973);
+    /* border: 1px solid #e8e8e8;
+    background-color: rgba(255, 255, 255, 0.973); */
     position: absolute;
     top: -150px;
     border-radius: 4px;
@@ -153,20 +155,24 @@ h5 {
 /*  #section syllabus
 ===========================*/
 .section__syllabus {
-    padding: 50px;
+    padding: 100px 0 0;
 }
 
 /*  #section about
 ===========================*/
 .section__about {
-    padding: 80px 0;
-    margin: 50px 0;
+    margin: 100px 0 0;
+    padding: 100px 0;
 }
 
 /* section facility
 ============================ */
+
+.section__facility {
+    padding: 100px 0 0;
+}
 .offer__block{
-    margin-bottom: 40px;
+    margin-bottom: 100px;
 }
 
 .offer__icon {
@@ -184,7 +190,7 @@ h5 {
 /* section testimonial
 =========================== */
 .section__testimonial {
-    padding: 80px 0;
+    padding: 100px 0;
     margin: 50px 0;
 }
 
