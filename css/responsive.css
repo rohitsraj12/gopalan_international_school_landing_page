@@ -35,32 +35,47 @@
     }
 
     .banner__content{
-        padding: 45px 0;
+        padding: 25px 0;
         position: absolute;
         bottom: 10%;
         left: 0%;
-        background-color: #030000a9;
-        border: 2px solid #161616d8;
+        /* background-color:#0300005c;
+        border: 2px solid #1616166e; */
     }
 
     .banner__content h1 {
         padding: 0 70px 0 40px;
-        font-family: 'Merienda', cursive;
         font-size: 2.5rem;
         font-weight: 600;
         color: #ffffff;
-        text-shadow: 0 0 7px rgba(0, 0, 0, 0.836)
+        text-shadow: 0 0 15px rgba(0, 0, 0, 0.836)
+    }
+
+
+    .banner__content h1 {
+        font-size: 2.5rem;
+        color: #ffffff;
+        text-shadow: 0 0 7px rgba(0, 0, 0, 0.836);
+        text-transform: lowercase;
+        letter-spacing: 2px;
     }
 
     .banner__content span{
-        font-size: 2rem;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-size: 3rem;
         display: inline-block;
         padding-bottom: 30px;
+        text-transform: capitalize;
+        font-weight: 500;
     }
 
     .banner__content strong{
-        font-weight: 400;
+        font-size: 2rem;
+        font-family: 'Barlow Semi Condensed', sans-serif;
+        font-weight: 300;
         display: block;
+        text-transform: capitalize;
+        padding-bottom: 20px;
     }
 
     .about__video, .about__content {
@@ -163,7 +178,7 @@
     .hamberger svg {
         width: 30px;
         height: 30px;
-        fill: rgb(49, 49, 49);
+        fill: rgb(255, 255, 255);
     }
 
     .header__nav {
@@ -212,7 +227,7 @@
         text-align: center;
     }
     .fixed__wrap > div {
-        width: 50%;
+        width: 100%;
     }
 
     .section__query a {
