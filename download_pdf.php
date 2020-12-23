@@ -5,15 +5,17 @@
         $student_name = $_POST['s_name'];
         $email = $_POST['email'];
         $phone = $_POST['phone'];
+        $syllabus = $_POST['syllabus'];
 
         // $to = "webdesigner@gopalancoworks.com";
-        $to = "digitalmarketing@gopalanenterprises.com"; 
+        $to = "digitalmarketing@gopalanenterprises.com";
         $subject = "Download Brochure Form | GIS Landing Page";
         $message = "<p>Download pdf form</p></br>";
-        $message .= "<p> parent name: <strong>". $parent_name ."</strong></p></br>";
-        $message .= "<p> student name: <strong>". $student_name ."</strong></p></br>";
-        $message .= "<p> email: <strong>". $email ."</strong></p></br>";
-        $message .= "<p> phone number: <strong>". $phone ."</strong></p></br>";
+        $message .= "<p> Parent name: <strong>". $parent_name ."</strong></p></br>";
+        $message .= "<p> Student name: <strong>". $student_name ."</strong></p></br>";
+        $message .= "<p> Email: <strong>". $email ."</strong></p></br>";
+        $message .= "<p> Phone number: <strong>". $phone ."</strong></p></br>";
+        $message .= "<p> Selected syllabus: <strong>". $syllabus ."</strong></p></br>";
         $message .= "<p>Thank you,</p>";
         $message .= "<p>". $parent_name ."</p>";
         $message .= "<p>" . $email . " | " . $phone . "</p>";
