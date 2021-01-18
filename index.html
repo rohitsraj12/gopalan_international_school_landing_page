@@ -24,6 +24,7 @@
         <meta name="twitter:description" content="" />
         <meta name="twitter:"keywords" content="">
         <!-- open graph code begins-->
+        
         <meta property="og:type" content="business.business">
         <meta property="og:title" content=" ">
         <meta property="og:url" content="">
@@ -39,6 +40,9 @@
         <link href="css/bootstrap.min.css" rel="stylesheet">
         <link rel="stylesheet" href="css/style.css">
         <link rel="stylesheet" href="css/responsive.css">
+
+        <!-- script -->
+        <script async custom-element="amp-youtube" src="https://cdn.ampproject.org/v0/amp-youtube-0.1.js"></script>
     </head>
     <body>
         <div class="body__wrap" id="home">
@@ -150,7 +154,6 @@
                         <img src="img/banner/GIS_Banner_sm.jpg" alt="gopalan international school">
                     </div>
                 </div>
-
             </div>
             <!-- end body banner -->
 
@@ -207,6 +210,7 @@
                                                         </header>
 
                                                         <p class="card-text">GIS believe in the perfection that exists in each individual and that can be manifested through the right guidance on the part of the school.</p>
+                                                        
                                                         <footer>
                                                             <button class="btn btn__primary" data-toggle="modal" data-target="#cambridge">Get More Information</button>
                                                         </footer>
@@ -233,7 +237,15 @@
                             </header>
                             <div class="d-md-flex">
                                 <div class="about__video">
-                                    <iframe src="https://www.youtube.com/embed/V7TTU5tirnU" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+                                    <amp-iframe 
+                                        title="Gopalan International school"
+                                        sandbox="allow-scripts allow-same-origin allow-popups"
+                                        frameborder="0"  
+                                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" 
+                                        allowfullscreen
+                                        src="https://www.youtube.com/embed/V7TTU5tirnU">
+                                        <!-- V7TTU5tirnU -->
+                                    </amp-iframe>
                                 </div>
                                 <div class="about__content">
                                     <article class="pb-5 px-5">
@@ -250,7 +262,8 @@
                                             <p>
                                                 Our team is backed by rich educational experience of having worked in various prestigious institutes, and these inspiring minds have created an innovative model of instruction for the pre-primary and primary stages. This model incorporates the very effective concepts of Montessori and the Play Way system. For GIS, they have envisioned a program that serves to enrich and enhance the skills of the students. Our logo symbolizes the 'Panchabhutam', or the five elements of nature - Air, Fire, Space, Water and Earth. In these natural environs, the child is forever trying to reach beyond the obvious.</p>
                                             <p>
-                                                Gopalan International School (GIS) is where your child will find his/her first independent, socially interactive scene. It's a place where your children pick up valuable lessons that leave an indelible mark on their future. It is a place where you as parents can confidently send your children and be assured of them being molded into responsible, confident and successful individuals.</p>
+                                                Gopalan International School (GIS) is where your child will find his/her first independent, socially interactive scene. It's a place where your children pick up valuable lessons that leave an indelible mark on their future. It is a place where you as parents can confidently send your children and be assured of them being molded into responsible, confident and successful individuals.
+                                            </p>
                                         </div>
                                         <footer class="section__footer pt-4">
                                             <ul class="d-flex justify-content-center">
@@ -259,7 +272,7 @@
                                             </ul>
                                         </footer>
                                     </article>
-                                    </div>
+                                </div>
                             </div>
                         </div>
                     </section>
