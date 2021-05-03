@@ -1,6 +1,6 @@
 <!-- 
     
-    lANDING PAGE URL    : http://www.gopalanschool.com/best-international-school-in-whitefield/ 
+    lANDING PAGE URL    : http://www.gopalanschool.com/best_international_school_in_whitefield/
     lAST UPDATED        : 19th Dec 2020
 
 -->
@@ -174,13 +174,13 @@
                             <div class="container">
                                     
                                 <section class="row">
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="card mb-3" style="max-width: 540px;">
                                             <article class="row no-gutters">
-                                                <figure class="col-md-5 mb-0">
+                                                <figure class="col-md-12 mb-0">
                                                     <img src="img/Syllabus/icse.jpg" class="card-img" alt="cambridge syllabus gopalan international school">
                                                 </figure>
-                                                <div class="col-md-7">
+                                                <div class="col-md-12">
                                                     <div class="card-body">
                                                         <header>
                                                             <h5 class="card-title">ICSE</h5>
@@ -197,13 +197,13 @@
                                             </article>
                                         </div>
                                     </div>
-                                    <div class="col-md-6">
+                                    <div class="col-md-4">
                                         <div class="card mb-3" style="max-width: 540px;">
                                             <article class="row no-gutters">
-                                                <figure class="col-md-5 mb-0">
+                                                <figure class="col-md-12 mb-0">
                                                     <img src="img/Syllabus/cambridge.jpg" class="card-img" alt="cambridge syllabus gopalan international school">
                                                 </figure>
-                                                <div class="col-md-7">
+                                                <div class="col-md-12">
                                                     <div class="card-body">
                                                         <header>
                                                             <h5 class="card-title">Cambridge</h5>
@@ -213,6 +213,30 @@
                                                         
                                                         <footer>
                                                             <button class="btn btn__primary" data-toggle="modal" data-target="#cambridge">Get More Information</button>
+                                                        </footer>
+                                                    </div>
+                                                </div>
+                                            </article>
+                                        </div>
+                                    </div>
+                                    <div class="col-md-4">
+                                        <div class="card mb-3" style="max-width: 540px;">
+                                            <article class="row no-gutters">
+                                                <figure class="col-md-12 mb-0">
+                                                    <img src="img/Syllabus/nios.jpg" class="card-img" alt="cambridge syllabus gopalan international school">
+                                                </figure>
+                                                <div class="col-md-12">
+                                                    <div class="card-body">
+                                                        <header>
+                                                            <h5 class="card-title">NIOS</h5>
+                                                        </header>
+
+                                                        <p class="card-text">
+                                                            GIS is proud to introduce the NIOS Program for Secondary and Senior Secondary students from the academic year 2021-22. The main aim of the National Institute of Open Schooling (NIOS) @ GIS is to ‘reach the unreached’.
+                                                        </p>
+                                                        
+                                                        <footer>
+                                                            <button class="btn btn__primary" data-toggle="modal" data-target="#nios">Get More Information</button>
                                                         </footer>
                                                     </div>
                                                 </div>
@@ -496,6 +520,7 @@
                                                         <option>Select Your Syllabus</option>
                                                         <option value="ICSE">ICSE</option>
                                                         <option value="Cambridge">Cambridge</option>
+                                                        <option value="NIOS">NIOS</option>
                                                     </select>
                                                 </div>
                                             <div class="form-group">
@@ -598,6 +623,7 @@
                                     <option>Select Your Syllabus</option>
                                     <option value="ICSE">ICSE</option>
                                     <option value="Cambridge">Cambridge</option>
+                                    <option value="NIOS">NIOS</option>
                                 </select>
                             </div>
                         </div>
@@ -653,6 +679,44 @@
                 <div class="modal-content">
                     <div class="modal-header">
                         <h5 class="modal-title" id="staticBackdropLabel">Cambridge Enquiry</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                            <span aria-hidden="true">&times;</span>
+                        </button>
+                    </div>
+                    <form action="syllabus_form.php" method="POST">
+                        <div class="modal-body">
+                            <div class="form-group">
+                                <label for="p_name">Parent Name</label>
+                                <input name="p_name" type="type" class="form-control" id="p_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="s_name">Student Name</label>
+                                <input name="s_name" type="type" class="form-control" id="s_name">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input name="email" type="email" class="form-control" id="email">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Phone</label>
+                                <input name="phone" type="tel" class="form-control" id="phone">
+                            </div>
+                           <input type="hidden" name="syllabus" value="Cambridge">
+                        </div>
+                        <div class="modal-footer">
+                            <button type="submit" name="submit_syllabus" class="btn btn__primary">Submit</button>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </section>
+        
+        <!-- modal nios form section -->
+        <section class="modal fade" id="nios" data-backdrop="static" data-keyboard="false" tabindex="-1" aria-labelledby="staticBackdropLabel" aria-hidden="true">
+            <div class="modal-dialog modal-dialog-centered">
+                <div class="modal-content">
+                    <div class="modal-header">
+                        <h5 class="modal-title" id="staticBackdropLabel">NIOS Enquiry</h5>
                         <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                             <span aria-hidden="true">&times;</span>
                         </button>
